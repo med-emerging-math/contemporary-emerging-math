@@ -9,7 +9,7 @@ This contains an implementation of the 4 methods of voting we've studied. Here a
     pairwise_comparison_winner()
     plurality_elimination_winner()
 
-**input**: an `election` of the form `mathelec = { 'ABCD': 14, 'CBDA':10, 'DCBA':8, 'BDCA': 4, 'CDBA': 1}`.
+**input**: an `election` of the form `election = { 'ABCD': 14, 'CBDA':10, 'DCBA':8, 'BDCA': 4, 'CDBA': 1}`.
 
 **output**: a pair `('A', 14)` or possibly `('TIE', 14)`.
 
