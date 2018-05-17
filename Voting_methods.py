@@ -149,7 +149,7 @@ def plurality_elimination_winner(election):
     n = candidates(election)
     if n == 0:
         # No candidates.
-        return 'TIE'
+        return ('TIE', 0)
     if n == 2:
         # Could return a TIE.
         return plurality_winner(election)
