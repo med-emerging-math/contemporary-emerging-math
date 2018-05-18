@@ -1,5 +1,11 @@
 # contemporary-emerging-math
 
+## Sieve of Eratosthenes in Scratch
+
+Here's my implementation of the Sieve in Scratch. For `n=8` to `n=40` it will say the primes for you. Then up to `n=100` or so it will show you the primes, but will get confused when it tries to say them. It works up to `n=400`, but at that point each box is a single pixel, so it's not particularly useful.
+
+    https://scratch.mit.edu/projects/224135505/
+
 ## Voting_methods.py
 
 This contains an implementation of the 4 methods of voting we've studied. Here are the four main methods:
