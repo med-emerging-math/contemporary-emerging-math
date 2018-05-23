@@ -88,7 +88,7 @@ def h2h_ballot_winner(candidate1, candidate2, ballot):
     """Determine the winner on a single ballot."""
     # Make sure both candidates are on the ballot
     if (not candidate1 in ballot) and (not candidate2 in ballot):
-        return 'TIE'
+        return ('TIE', 0)
     if (not candidate1 in ballot):
         return candidate2
     if (not candidate2 in ballot):
@@ -109,8 +109,8 @@ def pairwise_score(candidate, election):
         if challenger == candidate:
             pass
         else:
-            score_can = sum([1 for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == candidate])
-            score_cha = sum([1 for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == challenger])
+            score_can = sum([election[ballot] for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == candidate])
+            score_cha = sum([election[ballot] for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == challenger])
             if score_can == score_cha:
                 score += 0.5
             elif score_can > score_cha:
