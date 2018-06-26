@@ -32,7 +32,7 @@ def determine_winner(data):
         if winner[1] > runner_up[1]:
             return winner
         else:
-            return ('TIE', winner[0])
+            return winner
 
 #################
 ### Plurality ###
@@ -146,10 +146,13 @@ def plurality_elimination_winner(election):
     who should be eliminated.
     """
     total_votes = sum(election.values())
-    n = candidates(election)
+    n = len(candidates(election))
     if n == 0:
         # No candidates.
         return ('TIE', 0)
+    if n == 1:
+        # One candidate.
+        return election[0]
     if n == 2:
         # Could return a TIE.
         return plurality_winner(election)
