@@ -32,7 +32,7 @@ def determine_winner(data):
         if winner[1] > runner_up[1]:
             return winner
         else:
-            return ('TIE', winner[0])
+            return winner
 
 #################
 ### Plurality ###
@@ -88,7 +88,7 @@ def h2h_ballot_winner(candidate1, candidate2, ballot):
     """Determine the winner on a single ballot."""
     # Make sure both candidates are on the ballot
     if (not candidate1 in ballot) and (not candidate2 in ballot):
-        return ('TIE', 0)
+        return 'TIE'
     if (not candidate1 in ballot):
         return candidate2
     if (not candidate2 in ballot):
@@ -109,8 +109,8 @@ def pairwise_score(candidate, election):
         if challenger == candidate:
             pass
         else:
-            score_can = sum([election[ballot] for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == candidate])
-            score_cha = sum([election[ballot] for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == challenger])
+            score_can = sum([1 for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == candidate])
+            score_cha = sum([1 for ballot in election if h2h_ballot_winner(candidate, challenger, ballot) == challenger])
             if score_can == score_cha:
                 score += 0.5
             elif score_can > score_cha:
@@ -146,10 +146,13 @@ def plurality_elimination_winner(election):
     who should be eliminated.
     """
     total_votes = sum(election.values())
-    n = candidates(election)
+    n = len(candidates(election))
     if n == 0:
         # No candidates.
         return ('TIE', 0)
+    if n == 1:
+        # One candidate.
+        return election[0]
     if n == 2:
         # Could return a TIE.
         return plurality_winner(election)
