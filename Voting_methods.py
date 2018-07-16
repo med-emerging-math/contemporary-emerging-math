@@ -165,3 +165,24 @@ def plurality_elimination_winner(election):
 
 # plurality_elimination_winner(mathelec)
 # ('D', 23)
+
+def check_properties(plur, borda, plur_we, pairwise):
+    """Check that the user has given the correct properties for these voting methods."""
+    if plur['Majority'] == True and plur['Condorcet'] == False and plur['Monotone'] == True and plur['IIA'] == False:
+        print('Plurality is correct!')
+    else:
+        print('Plurality contains an error. Try again.')
+    if borda['Majority'] == False and borda['Condorcet'] == False and borda['Monotone'] == True and borda['IIA'] == False:
+        print('Borda Count is correct!')
+    else:
+        print('Borda Count contains an error. Try again.')
+    if plur_we['Majority'] == True and plur_we['Condorcet'] == False and plur_we['Monotone'] == False and plur_we['IIA'] == False:
+        print('Plurality-with-elimination is correct!')
+    else:
+        print('Plurality-with-elimination contains an error. Try again.')
+    if pairwise['Majority'] == True and pairwise['Condorcet'] == True and pairwise['Monotone'] == True and pairwise['IIA'] == False:
+        print('Pairwise Comparisons is correct!')
+    else:
+        print('Pairwise Comparisons contains an error. Try again.')
+    
+    return None
