@@ -16,9 +16,9 @@ Graphs are used in many different situations, such as:
 
 Sometimes we will refer to the collection of all vertices in a graph, which is called the **vertex set** of that graph. For example, in the airline graph above, the vertex set is `{Denver, Phoenix, Albuqurque, ..., Atlanta}` and it has 15 elements. 
 
-The collection of all edges of a graph is called its **edge set**. In our applications we will often look at vertex sets with the maximum possible set of edges. These graphs are called **complete** and are denoted $K_n$, where $n$ is the number of vertices.
+The collection of all edges of a graph is called its **edge set**. In our applications we will often look at vertex sets with the maximum possible set of edges. These graphs are called **complete** and are denoted K_n, where n is the number of vertices.
 
-**Theorem**. A complete graph with $n$ nodes has $n$ choose $2$ edges. That is, it has $\frac{n(n-1)}{2}$ edges.
+**Theorem**. A complete graph with n nodes has `n choose 2` edges. That is, it has `n(n-1)/2` edges.
 
 > ![](http://mathworld.wolfram.com/images/eps-gif/CompleteGraphs_801.gif) The complete graphs on 2,3, ..., 7 nodes. Image from [Wolfram MathWorld](http://mathworld.wolfram.com/CompleteGraph.html).
 
@@ -34,9 +34,9 @@ A graph can also contain information about **distances between nodes** on its ed
 
 A map of a city *implicitly* is a weighted graph. Each (relevant) location is a node, and the distance between and two locations is the distance it takes to travel from one to the other.
 
-In the map of downtown Calgary above, it would take a significant amount of time for a person to write down all the weights of the edges between the 13+7+11+1+8 = 40 points of interest. (There are 40 choose 2 = 780 total pairs.) As an example, the distance between Fort Calgary (See and Do 8) and the HI Calgary City Centre (Sleep 3) appears to be 5 blocks. Now just find the 779 other distances! (In practice the data is presented in a way that makes it easier to automate.)
+In the map of downtown Calgary above, it would take a significant amount of time for a person to write down all the weights of the edges between the 13+7+11+1+8 = 40 points of interest. (There are `40 choose 2 = 780` total pairs.) As an example, the distance between Fort Calgary (See and Do 8) and the HI Calgary City Centre (Sleep 3) appears to be 5 blocks. Now just find the 779 other distances! (In practice the data is presented in a way that makes it easier to automate.)
 
-A **path** in a graph is a sequence of nodes $v_1, v_2, \ldots, v_k$ where $v_1$ is adjacent to $v_2$, $v_2$ is adjacent to $v_3$, ..., all the way down to $v_{k-1}$ is adjacent to $v_k$. You can repeat nodes, or even edges, that's fine. For example, in the airline graph above, Los Angeles, Seattle, Denver, St Louis is a path, but Los Angeles, Seattle, Kansas City, Denver is not a path. (*Why*?) A **circuit** (or closed path) is a path that starts and ends at the same vertex. For example, Denver, Kansas City, Los Angeles, Denver is a circuit.
+A **path** in a graph is a sequence of nodes v_1, v_2, ..., v_k where v_1 is adjacent to v_2, v_2 is adjacent to v_3, ..., all the way down to v_(k-1) is adjacent to v_k. You can repeat nodes, or even edges, that's fine. For example, in the airline graph above, Los Angeles, Seattle, Denver, St Louis is a path, but Los Angeles, Seattle, Kansas City, Denver is not a path. (*Why*?) A **circuit** (or closed path) is a path that starts and ends at the same vertex. For example, Denver, Kansas City, Los Angeles, Denver is a circuit.
 
 We often ask Google maps for the **shortest route** between two locations, and this is a classic problem in graph theory called the [shortest path problem](https://en.wikipedia.org/wiki/Shortest_path_problem). It turns out that (maybe unsurprisingly) this problem is pretty easy for computers to solve exactly. In this module we will be looking at a different common problem in distance graphs that is *not* easy for even super-computers to solve exactly.
 
