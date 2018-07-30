@@ -31,7 +31,11 @@ Their major advantage is that they are *not* very time consuming to perform and 
 
 ## 3. Local vs global
 
-The big reason that the Greedy algorithm does not always produce the optimal *global* solution is that it only looks for the best *local* addition. In other words, it does the best it can at any given stage, but it does not look into the future to see if overall if it will be helpful. 
+The big reason that the Greedy algorithm does not always produce the optimal *global* solution is that it only looks for the best *local* addition. In other words, it does the best it can at any given stage, but it does not look into the future to see if overall if it will be helpful.
+
+> [!["That's all I need"](https://img.youtube.com/vi/w2X3vVMdh-s/0.jpg)](https://www.youtube.com/watch?v=w2X3vVMdh-s) 
+
+> In the "That's all I need" scene from "The Jerk", Steve Martin's character is performing a type of greedy algorithm. He's not thinking about these objects will work together, or help him in the long run.
 
 When solving a TSP, the nearest-neighbour algorithm only looks at what adding a single node will do to the cost of the path. If we wanted a more robust nearest-neighbor algorithm we could instead ask to add two consecutive edges at a time that make the cheapest (two edge) path addition. This would be require more computation at each stage, but would often give better results. In the most extreme case we could ask the algorithm to add the `n-1` many consecutive edges of least total weight... that would be the exact same as the Brute Force algorithm!
 
@@ -47,15 +51,18 @@ These methods won't always be the final ones you decide on, but they can be good
 ## Exercises
 
 1. Like in example 1, you want to separate five students (A,B,C,D,E) into as few groups so that their requests are respected. Find, using whatever method you like, a satisfactory set of groups if their requests are: 
-  1. A does not like B and C.
-  2. B does not like A.
-  3. C does not like D.
-  4. D does not like B or C.
-  5. E does not like B.
+    
+    1. A does not like B and C.
+    2. B does not like A.
+    3. C does not like D.
+    4. D does not like B or C.
+    5. E does not like B.
+
 2. A classic optimization problem is the [Assignment problem](https://en.wikipedia.org/wiki/Assignment_problem). One example of this is that your family has 4 members and there are 4 chores that need to be done. Each person must do exactly one chore, and no one can do the same chore. To make it fair, each person is allowed to rate, on a scale of -10 (strong dislike) to 0 (neutral) to 10 (strong preference), how much they would like to do each of the chores. For example, Rohan might assign a 5 to taking out garbage, a 2 to walking the dog, 10 to buying groceries, and -5 to cleaning the bathroom. **Describe a Brute Force method for solving this problem, and describe a Greedy Algorithm for solving this problem.**
 3. Grid-walking problems are a class of counting problems where you ask "How many paths are there through a grid, starting in the bottom left, moving only up or right?". You can [read about them here](https://brilliant.org/wiki/rectangular-grid-walk-no-restriction/). Many of these problems require mathematical insights to solve, and part of the way to develop that insight is to perform Brute force computations on small cases, then guess a pattern. By listing out all possible paths, **find the number of paths in a 2 by 3 grid** that: 
-  1. Start in the bottom left square of the grid,
-  2. End in the top right of the grid,
-  3. Only move right or up one square at a time (no moving diagonally or down or left).
+    
+    1. Start in the bottom left square of the grid,
+    2. End in the top right of the grid,
+    3. Only move right or up one square at a time (no moving diagonally or down or left).
+
 After that, find the number of paths in a 3 by 3 grid, and a 4 by 3 grid. Then guess a general pattern.
-4. Watch the ["That's All I Need"](https://youtu.be/w2X3vVMdh-s) scene from "The Jerk". Explain how Steve Martin's character is performing a type of greedy algorithm.
