@@ -8,7 +8,7 @@ At first it might seem that algorithms with random components cannot possibly be
 
 However, there are many circumstances where purely random algorithms are good *enough*, possibly with a small amount of conditioning. For example, choosing a random outfit to wear in the morning will often work just fine, and might save you time. Sure, it might not be the *perfect* outfit for the day, but it will likely be okay. Maybe choosing your outfit *completely* randomly might not work, but it could be improved by first choosing a random top, and then choosing a random bottom *from among bottoms that go well with that top*. That algorithm seems like it would be pretty effective.
 
-> ![](https://recycledrose.files.wordpress.com/2010/08/dsc_0008.jpg)    
+> <a href="url"><img src="https://recycledrose.files.wordpress.com/2010/08/dsc_0008.jpg" align="center" width="250" ></a>    
 > A somewhat random choice of clothes isn't the worst! [Source](https://recycledrose.wordpress.com/2010/08/12/day-40-mismatch-style/)
 
 The lesson here is that, if most of the options are close enough to the optimal choice (i.e. have low **relative error**), a random choice will likely be close enough to the optimal choice.
