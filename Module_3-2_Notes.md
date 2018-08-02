@@ -25,6 +25,8 @@ In the group selection example above, a greedy algorithm would be to pick one st
 
 In the Board Game example, a greedy algorithm would be to pick the largest board game you can and place it in a suitcase. For the next largest board game, put it in the first suitcase if it fits, and if not, then put it in a new suitcase. For the third largest boardgame, try to put it in one of the first two suitcases, and if it doesn't fit, then start another new suitcase. Continue doing this until all board games are in a suitcase.
 
+[Demonstration of a greedy algorithm](https://youtu.be/Abw-gp1MRls)
+
 These two algorithms should feel very similar to each other and to the nearest-neighbour method for TSPs. A greedy algorithm, like a Brute Force algorithm is often available when trying to solve an optimization problem.
 
 Their major advantage is that they are *not* very time consuming to perform and they usually give reasonable results. The major downside is that they do not usually give the optimal solution.
