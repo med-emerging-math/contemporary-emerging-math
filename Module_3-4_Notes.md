@@ -23,7 +23,7 @@ There are additional challenges in this modelling which you can explore in the e
 ## Exercises
 
 1. TSPs are more relevant to **100%** speedruns, but can also be relevant to **any%** speedruns. Watch [this video](https://www.youtube.com/watch?v=dNL8rdn00IU) about the world record progression of the Super Metroid any% speedrun.
-  1. Describe how this speedrun can be modelled as a TSP. What are the nodes in this weighted graph? (This happens in the first 5 minutes of the video.)
-  2. What was the original tour (by Smokey), and how did it get improved (by Behemoth)? Find a map of Super Metroid game world online and identify the positions of the nodes of the TSP.
-  3. Is Behemoth's newer route always faster than Smokey's old route? What needs to happen in a speedrun for Behemoth's route to be faster than Smokey's route? (This happens around the 16 minute mark of the video.)
+    1. Describe how this speedrun can be modelled as a TSP. What are the nodes in this weighted graph? (This happens in the first 5 minutes of the video.)
+    2. What was the original tour (by Smokey), and how did it get improved (by Behemoth)? Find a map of Super Metroid game world online and identify the positions of the nodes of the TSP.
+    3. Is Behemoth's newer route always faster than Smokey's old route? What needs to happen in a speedrun for Behemoth's route to be faster than Smokey's route? (This happens around the 16 minute mark of the video.)
 2. Read this [Reddit post about the challenges of using TSPs in video games](https://old.reddit.com/r/speedrun/comments/4bqsqs/have_there_been_attemps_to_model_a_run_with_the/), and find another challenge about modeling TSPs in video games (besides measuring minimal distances).
