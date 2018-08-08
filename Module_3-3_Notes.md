@@ -27,6 +27,10 @@ We can apply this type of randomness to many problems: ["How do I think more cre
 
 Let's now apply mutations to two of our TSP algorithms: Nearest Neighbour (NN) and Cheapest Link (CL). Both of these algorithms are greedy algorithms; we always take the cheapest option available to us at each stage. Now, instead of always taking the cheapest option, lets take the cheapest option 80 % of the time, and the other 20 % of the time lets take the second-cheapest option available. (The exact numerical choices of 80-20 aren't that important, other than I wanted to choose the cheapest option most of the time.) If we run this algorithm numerous times it will give us many tours to choose from, and hopefully at least one of them is close to optimal.
 
+### Interactive random nearest neighbour
+
+Matthew Adams made [a nice interactive program](randomized-tsp.ipynb) to show off the random nearest neighbour algorithm. Please play around with it by downloading it to your jupyter server. (See the course content for instructions - which basically amount to pressing `shift + enter`.)
+
 ## Genetic Algorithms
 
 Finally, we mention **genetic algorithms**, which are related to **machine learning** and **artificial intelligence**. This section is meant to be an overview - a peek inside. A detailed explanation of these things would go beyond the course, so don't worry if you don't follow every single word. Genetic algorithms (like brute force algorithms or greedy algorithms) are a whole class of algorithms, or in other words, a style of algorithm. There isn't a single "genetic algorithm".
