@@ -23,7 +23,7 @@ Ant colonies turn out to be very good at producing approximate solutions for TSP
 
 For example, in a group of 30 students ask each student to secretly choose two other students and then try to move to be between them. *What do you think will happen?* In practice, all 30 students clump together in one big mess. 
 
-![](3_3_children)
+![](3_3_children.jpg)
 
 As a second example, this time as each student to secretly choose another student to be their "dragon" and a student to be their "knight", and they must always keep their knight in between them and their dragon. *What do you think will happen?* In this version typically the students spread out and form small clusters. (If you decide to try this game with real students you should make a rule like no one is allowed to leave the field, otherwise students might be tempted to spread out very far!)
 
@@ -31,8 +31,8 @@ In both of the previous examples, the students were the individual agents and we
 
 **Ant colony optimization (ACO)** is a specific type of swarm intelligence. The idea is that when an individual ant travels it leaves a pheremone trail for other ants to follow. The first ant's path will be random, and its pheremone trail will be faint. Later ants will tend to follow pheremone trails (although they may also deviate). The more ants that follow a trail, the stronger the pheremone trail becomes, encouraging more ants to follow it. The pheremones will fade over time, so short paths that have many ants traveling on them will stay strong, while long, inefficient paths will fade from disuse.
 
-> ![](https://99percentinvisible.org/app/uploads/2015/12/desire-path-usability.png)    
-> Top-down design can often be inflexible, and individual agents might find better paths. [Read more about this here](https://99percentinvisible.org/article/least-resistance-desire-paths-can-lead-better-design/).  Picture by Natalia Klishina.
+> <a href="url"><img src="https://99percentinvisible.org/app/uploads/2015/12/desire-path-usability.png" align="center" width="400" ></a>       
+> Shorter paths get reinforced with use. Top-down design can often be inflexible, and individual agents might find better paths. [Read more about this here](https://99percentinvisible.org/article/least-resistance-desire-paths-can-lead-better-design/).  Picture by Natalia Klishina.
 
 This type of optimization was modeled mathematically in 1991, and has since been adapted for use in package delivery, internet traffic, and protein folding problems. It can be used for many optimization problems in graph theory, such as TSPs.
 
