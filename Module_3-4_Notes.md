@@ -18,7 +18,15 @@ There are additional challenges in this modelling which you can explore in the e
 
 ## 2. Swarm Intelligence and Ant Colony Optimization (ACO)
 
+Ant colonies turn out to be very good at producing approximate solutions for TSPs. 
 
+**Swarm Intelligence** is the powerful idea that giving simple instructions to individual agents in large group can produce complicated and sophisticated results. 
+
+For example, in a group of 30 students ask each student to secretly choose two other students and then try to move to be between them. *What do you think will happen?* In practice, all 30 students clump together in one big mess. As a second example, this time as each student to secretly choose another student to be their "dragon" and a student to be their "knight", and they must always keep their knight in between them and their dragon. *What do you think will happen?* In this version typically the students spread out and form small clusters. (If you decide to try this game with real students you should make a rule like no one is allowed to leave the field, otherwise students might be tempted to spread out very far!)
+
+In both of the previous examples, the students were the individual agents and were given **local instructions** to follow, that is you told each student how they should move. Even though all the rules were about individuals, the group started to move and take shape in interesting ways. This is called [emergent behaviour](https://en.wikipedia.org/wiki/Emergence). Remarkably, even from simple local instructions, complex behaviour can emerge.
+
+****
 
 ## Exercises
 
